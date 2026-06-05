@@ -1,7 +1,7 @@
 // ==========================================
 // 1. D-DAY COUNTDOWN TIMER
 // ==========================================
-const targetDate = new Date("2026-07-04T12:00:00").getTime();
+const targetDate = new Date("2026-07-04T12:00:00+09:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
