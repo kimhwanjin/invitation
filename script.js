@@ -1,7 +1,7 @@
 // ==========================================
 // 1. D-DAY COUNTDOWN TIMER
 // ==========================================
-const targetDate = new Date("2026-12-26T12:00:00").getTime();
+const targetDate = new Date("2026-07-04T12:00:00").getTime();
 
 function updateCountdown() {
   const now = new Date().getTime();
@@ -38,7 +38,7 @@ function updateCountdown() {
   secondsEl.textContent = formatNum(seconds);
 
   // D-Day 문구 업데이트
-  ddayTextEl.innerHTML = `드미트리와 로렐라이의 결혼식이 <span>${days}일 ${hours}시간</span> 남았습니다.`;
+  ddayTextEl.innerHTML = `Gene Kim과 Jean Kim의 결혼식이 <span>${days}일 ${hours}시간</span> 남았습니다.`;
 }
 
 // 1초마다 카운트다운 함수 실행
@@ -152,16 +152,16 @@ const contactCall = document.getElementById("contact-call");
 const contactSms = document.getElementById("contact-sms");
 
 // 가상 전화번호
-const groomPhone = "01012345678"; // 드미트리
-const bridePhone = "01098765432"; // 로렐라이
+const groomPhone = "01012345678"; // Gene Kim
+const bridePhone = "01098765432"; // Jean Kim
 
 function openContactModal(target) {
   if (target === "groom") {
-    contactModalTitle.textContent = "신랑 드미트리에게 연락하기";
+    contactModalTitle.textContent = "신랑 Gene Kim에게 연락하기";
     contactCall.href = `tel:${groomPhone}`;
     contactSms.href = `sms:${groomPhone}`;
   } else if (target === "bride") {
-    contactModalTitle.textContent = "신부 로렐라이에게 연락하기";
+    contactModalTitle.textContent = "신부 Jean Kim에게 연락하기";
     contactCall.href = `tel:${bridePhone}`;
     contactSms.href = `sms:${bridePhone}`;
   }
